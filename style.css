@@ -1,0 +1,95 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: black;
+	color: white;
+	font-family: "Roboto";
+}
+
+.container {
+	width: 700px;
+	height: 1000px;
+	background-image: url(back.jpg);
+	background-size: cover;
+	margin: 20px auto; 
+}
+
+.calculator {
+	background-color: rgba(0, 102, 204, 0.2);
+	width: 430px;
+	height: 790px;
+	margin: 0 auto;
+	position: relative;
+	top: 100px;
+	border-radius: 20px;
+}
+
+.display {
+	height: 30%;
+	padding: 10px;
+	font-size: 28px;
+}
+
+.history {
+	opacity: 0.7;
+	/*background-color: rgba(0, 0, 0, 0.2);*/
+	height: 40%;
+	padding: 10px 20px;
+}
+
+.output {
+	background-color: rgba(102, 102, 204, 0.2);
+	color: black;
+	height: 60%;
+	text-align: right;
+	padding: 10px 20px;
+	font-size: 45px;
+	font-weight: bold;
+}
+
+.keyboard {
+	padding-left: 15px;
+}
+
+.operator, .digit, .empty {
+	opacity: 0.8;
+	width: 90px;
+	height: 90px;
+	margin: 15px 5px 0px 5px;
+	font-weight: bold;
+	font-size: 50px;
+	float: left;
+	border-style: none;
+}
+
+.operator:focus, .digit:focus, .empty:focus {
+	outline: none;
+}
+
+.digit, .empty {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.operator {
+	background-color: rgba(0, 0, 100, 0.3);
+	border-radius: 5px;
+	color: white;
+}
+
+.digit, .operator {
+	cursor: pointer;
+}
+
+.digit:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.operative:active, .digit:active, .operator:active{
+	border-style: none;
+	font-size: 40px;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 5px;
+}
+
